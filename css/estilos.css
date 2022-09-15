@@ -1,0 +1,156 @@
+
+html {
+    font-size: 62, 5%;
+}
+
+body {
+    background-color: rgb(30, 30, 252);
+}
+
+.titulo {
+    font-style: oblique;
+    text-align: center;
+    grid-area: header;
+    background-color: white;
+}
+
+.titulonota {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+ul {
+    padding: 5px;
+    background-color: blanchedalmond;
+}
+
+
+.noticia {
+    background-color: blanchedalmond;
+    border: solid 1px;
+    margin-top: 20px;
+}
+
+.main {
+    grid-area: main
+}
+
+.flexcaja {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.notav {
+    background-color: blanchedalmond;
+    margin: 20px;
+    padding: 10px;
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: section;
+}
+
+
+.aside {
+    grid-area: aside;
+    margin: 20px;
+    position: sticky;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+p {
+    margin-left: 30px;
+}
+
+.fotos {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.menuprincipal ul li {
+    display: inline;
+    list-style-type: none;
+    font-size: 1rem;
+    margin-top: 150px;
+    margin-left: 30px;
+    padding: 5px 5px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+    margin: 20px 20px 20px 20px;
+}
+
+footer {
+    color: black;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: white;
+    grid-area: footer;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.gridpadre {
+    display: grid;
+    grid-template-columns:  4fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 0,5fr;
+    grid-template-areas:
+        "header header header"
+        "main section aside"
+        "footer footer footer";
+}
+
+@media (max-width: 768px) {
+    .gridpadre{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 0,5fr 1fr 0,5fr;
+        grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    }
+    .notav{
+        display: none;}
+     } 
+
+ @media (max-width: 500px) {
+    .gridpadre {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0,5fr 1fr 0,5fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    .notav{
+        display: none;
+    }
+    .aside{
+        display: none;
+    }
+
+}
+
+
+
+
