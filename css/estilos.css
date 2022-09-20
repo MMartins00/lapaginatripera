@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: rgb(30, 30, 252);
+    background-color: rgb(50, 50, 216);
 }
 
 .titulo {
@@ -14,16 +14,18 @@ body {
     background-color: white;
 }
 
+
 .titulonota {
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
     display: inline-block;
 }
-
-ul {
-    padding: 5px;
-    background-color: blanchedalmond;
+.fondocontacto{
+    background-color: white;
+}
+.footercontacto{
+    background-color: rgb(50, 50, 194);
 }
 
 
@@ -107,14 +109,32 @@ footer {
 
 .formulario {
     text-align: center;
+    grid-area: formulario;
 }
-
+.carousel{
+    grid-area: carrusel;
+}
+.nav{
+    grid-area: nav;
+}
+.gridcontacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 0,5fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "formulario"
+    "footer";
+}
 .gridpadre {
     display: grid;
     grid-template-columns:  4fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 0,5fr;
+    grid-template-rows: 1fr 1fr 2fr 0,5fr;
     grid-template-areas:
         "header header header"
+        "nav nav nav"
+        "carrusel carrusel carrusel"
         "main section aside"
         "footer footer footer";
 }
