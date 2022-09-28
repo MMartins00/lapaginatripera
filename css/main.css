@@ -28,7 +28,7 @@ main {
     background-color: blanchedalmond;
     border: solid 1px;
     margin-top: 20px; }
-    main .noticia h3 {
+    main .noticia h5 {
       margin-top: 10px;
       margin-left: 10px;
       margin-bottom: 10px;
@@ -38,10 +38,10 @@ main {
       flex-direction: row;
       justify-content: flex-start; }
       main .noticia .flexcaja p {
-        margin-left: 30px; }
+        margin-left: 10px; }
       main .noticia .flexcaja .fotos {
-        width: 100px;
-        height: 100px;
+        width: 160px;
+        height: 200px;
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -60,7 +60,7 @@ main {
 
 .fotos {
   width: 100px;
-  height: 100px;
+  height: 150px;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -103,9 +103,9 @@ footer {
 
 .gridpadre {
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-columns: 2fr  1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr 0,5fr;
-  grid-template-areas: "header header header" "nav nav nav" "carrusel carrusel carrusel" "main section aside" "footer footer footer"; }
+  grid-template-areas: "header header header" "nav nav nav" "carrusel carrusel  carrusel" "main section aside" "footer footer footer"; }
 
 @media (max-width: 768px) {
   .gridpadre {
