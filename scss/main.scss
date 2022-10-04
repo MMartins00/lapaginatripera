@@ -5,21 +5,21 @@ html {
 }
 
 body {
-    background-color: $colorprincipal;
+    background-color: map-get($estilos, color1 );
 }
 
 .titulo {
     font-style: oblique;
     text-align: center;
     grid-area: header;
-    background-color: $colorsecundario;
+    background-color: map-get($estilos, color2 );
 }
 main {
-    grid-area: main;
- .noticia {
-    background-color: blanchedalmond;
+    grid-area: main;}
+.noticia {
+    background-color: map-get($estilos, color3 );
     border: solid 1px;
-    margin-top: 20px;
+    margin: 20px;
     h5{
     margin-top: 10px;
     margin-left: 10px;
@@ -34,33 +34,30 @@ main {
         margin-left: 10px;
     }
     .fotos {
-        width: 160px;
-        height: 200px;
+        @include sizes(160px,200px);
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
         display: block;
         background-repeat: no-repeat;
     }}}
-}
+
 .notav {
-    background-color: blanchedalmond;
-     margin: 20px;
+    @extend .noticia;
     padding: 10px;
-    border: solid 1px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    grid-area: section;}
- .fotos {
-        width: 100px;
-        height: 150px;
+    grid-area: section;
+
+.fotosv {
+        @include sizes(160px, 150px);
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px; 
         display: block;
-        background-repeat: no-repeat;
-}
+        background-repeat: no-repeat;}}
+
 
 .aside {
     grid-area: aside;
@@ -76,7 +73,7 @@ footer {
     margin-top: 70px;
     margin-bottom: 0px;
     text-align: center;
-    background-color: $colorsecundario;
+    background-color: map-get($estilos, color2 );
     grid-area: footer;
 }
 

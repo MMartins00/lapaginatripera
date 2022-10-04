@@ -1,2 +1,10 @@
-$colorprincipal: rgb(50, 50, 194);
-$colorsecundario: white;
+$estilos:(
+    color1:rgb(50, 50, 194),
+    color2: white,
+    color3:blanchedalmond,
+);
+@mixin sizes($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+    
+}

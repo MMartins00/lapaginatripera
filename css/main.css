@@ -24,48 +24,45 @@ body {
 
 main {
   grid-area: main; }
-  main .noticia {
-    background-color: blanchedalmond;
-    border: solid 1px;
-    margin-top: 20px; }
-    main .noticia h5 {
-      margin-top: 10px;
+
+.noticia, .notav {
+  background-color: blanchedalmond;
+  border: solid 1px;
+  margin: 20px; }
+  .noticia h5, .notav h5 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block; }
+  .noticia .flexcaja, .notav .flexcaja {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    .noticia .flexcaja p, .notav .flexcaja p {
+      margin-left: 10px; }
+    .noticia .flexcaja .fotos, .notav .flexcaja .fotos {
+      width: 160px;
+      height: 200px;
       margin-left: 10px;
+      margin-top: 10px;
       margin-bottom: 10px;
-      display: inline-block; }
-    main .noticia .flexcaja {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
-      main .noticia .flexcaja p {
-        margin-left: 10px; }
-      main .noticia .flexcaja .fotos {
-        width: 160px;
-        height: 200px;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: block;
-        background-repeat: no-repeat; }
+      display: block;
+      background-repeat: no-repeat; }
 
 .notav {
-  background-color: blanchedalmond;
-  margin: 20px;
   padding: 10px;
-  border: solid 1px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   grid-area: section; }
-
-.fotos {
-  width: 100px;
-  height: 150px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: block;
-  background-repeat: no-repeat; }
+  .notav .fotosv {
+    width: 160px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background-repeat: no-repeat; }
 
 .aside {
   grid-area: aside;

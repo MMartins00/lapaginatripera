@@ -1,8 +1,8 @@
 .fondo{
-    background-color: $colorsecundario;
+    background-color: map-get($estilos , color2 );
 }
 footer{
-    background-color: $colorprincipal;
+    background-color: map-get($estilos, color1 );
 }
 .grid{
     display: grid;
