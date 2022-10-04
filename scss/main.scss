@@ -51,7 +51,7 @@ main {
     grid-area: section;
 
 .fotosv {
-        @include sizes(160px, 150px);
+        @include sizes(120px, 150px);
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px; 
