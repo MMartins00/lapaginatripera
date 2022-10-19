@@ -21,21 +21,16 @@ main {
     background-color: map-get($estilos, color3 );
     border: solid 1px;
     margin: 20px;
-    h5{
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    display: inline-block;}
     .flexcaja {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
     
     p {
-        margin-left: 10px;
+        font-size: 80%;
     }
     .fotos {
-        @include sizes(160px,200px);
+        @include sizes(200px,160px);
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -50,6 +45,9 @@ main {
     flex-direction: column;
     justify-content: flex-start; 
     grid-area: section;
+p{
+        font-size: 80%;
+    }
 
 .fotosv {
         @include sizes(120px, 150px);
@@ -57,9 +55,27 @@ main {
         margin-top: 10px;
         margin-bottom: 10px; 
         display: block;
-        background-repeat: no-repeat;}}
+        background-repeat: no-repeat;}
+    }
 
-
+        .notav2 {
+            @extend .noticia;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+            grid-area: section2;
+            p{
+                font-size: 80%;
+            }
+        
+        .fotosv {
+                @include sizes(120px, 150px);
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px; 
+                display: block;
+                background-repeat: no-repeat;}}
 .aside {
     grid-area: aside;
     margin: 20px;
@@ -109,12 +125,13 @@ footer {
 .gridpadre {
     display: grid;
     grid-template-columns:  2fr  1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 0,5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0,5fr;
     grid-template-areas:
         "header header header"
         "nav nav nav"
         "carrusel carrusel  carrusel"
         "main section aside"
+        "main section2 aside"
         "footer footer footer";
 }
 

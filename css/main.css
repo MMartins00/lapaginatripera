@@ -88,24 +88,19 @@ body {
 main {
   grid-area: main; }
 
-.noticia, .notav {
+.noticia, .notav, .notav2 {
   background-color: #ffe1b5;
   border: solid 1px;
   margin: 20px; }
-  .noticia h5, .notav h5 {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    display: inline-block; }
-  .noticia .flexcaja, .notav .flexcaja {
+  .noticia .flexcaja, .notav .flexcaja, .notav2 .flexcaja {
     display: flex;
     flex-direction: row;
     justify-content: flex-start; }
-    .noticia .flexcaja p, .notav .flexcaja p {
-      margin-left: 10px; }
-    .noticia .flexcaja .fotos, .notav .flexcaja .fotos {
-      width: 160px;
-      height: 200px;
+    .noticia .flexcaja p, .notav .flexcaja p, .notav2 .flexcaja p {
+      font-size: 80%; }
+    .noticia .flexcaja .fotos, .notav .flexcaja .fotos, .notav2 .flexcaja .fotos {
+      width: 200px;
+      height: 160px;
       margin-left: 10px;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -118,7 +113,26 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   grid-area: section; }
+  .notav p {
+    font-size: 80%; }
   .notav .fotosv {
+    width: 120px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background-repeat: no-repeat; }
+
+.notav2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-area: section2; }
+  .notav2 p {
+    font-size: 80%; }
+  .notav2 .fotosv {
     width: 120px;
     height: 150px;
     margin-left: 10px;
@@ -171,8 +185,8 @@ footer {
 .gridpadre {
   display: grid;
   grid-template-columns: 2fr  1fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr 0,5fr;
-  grid-template-areas: "header header header" "nav nav nav" "carrusel carrusel  carrusel" "main section aside" "footer footer footer"; }
+  grid-template-rows: 1fr 1fr 1fr 1fr 0,5fr;
+  grid-template-areas: "header header header" "nav nav nav" "carrusel carrusel  carrusel" "main section aside" "main section2 aside" "footer footer footer"; }
 
 @media (max-width: 768px) {
   .gridpadre {
