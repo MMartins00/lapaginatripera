@@ -26,10 +26,11 @@ footer{
 }
 @media (max-width:500px){
     .grid{
-        grid-template-areas: "header header"
-        "nav nav"
-        "formulario formulario"
-        "footer footer";
+        grid-template-columns: 1fr;
+        grid-template-areas: "header "
+        "nav"
+        "formulario"
+        "footer";
     }
     .asdie{ display: none;}
 }

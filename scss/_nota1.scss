@@ -7,11 +7,7 @@
     "nav nav"
     "main aside"
     "footer footer";
-<<<<<<< HEAD
     background-color: map-get($estilos, color2);
-=======
-    background-color: map-get($estilos, color2 );
->>>>>>> e38f72d51f96900bc20cafe742528db00bfc53be
 }
 .aside{
     grid-area: aside;

@@ -1,6 +1,8 @@
 @import "variables";
-@import "nota1";
 @import "contacto";
+@import "nota1";
+@import "nota2";
+@import "nota3";
 html {
     font-size: 62, 5%;
 }
@@ -84,6 +86,9 @@ p{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
+    .ig{
+        margin-bottom: 70px;
+    }
 }
 footer {
     color: black;
