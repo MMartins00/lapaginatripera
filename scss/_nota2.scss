@@ -67,3 +67,26 @@ h2{
     grid-area: footer;
     background-color: map-get($estilos , color1 );
 }
+@media (max-width: 768){
+    .grid{
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    }
+    .aside{
+        display: none;
+    }
+    }
+    @media (max-width: 500px){
+        .grid{
+            grid-template-columns: 1fr;
+            grid-template-areas: "header"
+            "nav"
+            "main"
+            "footer";}
+        .aside{
+            display: none;
+        }
+        }

@@ -88,6 +88,19 @@ h2 {
   grid-area: footer;
   background-color: #3232c2; }
 
+@media (max-width: 768) {
+  .grid {
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  .aside {
+    display: none; } }
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .aside {
+    display: none; } }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 0,5fr;
@@ -151,6 +164,19 @@ h2 {
   grid-area: footer;
   background-color: #3232c2; }
 
+@media (max-width: 768) {
+  .grid {
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  .aside {
+    display: none; } }
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .aside {
+    display: none; } }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 0,5fr;
@@ -213,6 +239,19 @@ h2 {
 .footer {
   grid-area: footer;
   background-color: #3232c2; }
+
+@media (max-width: 768) {
+  .grid {
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  .aside {
+    display: none; } }
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .aside {
+    display: none; } }
 
 html {
   font-size: 62, 5%; }
@@ -301,12 +340,12 @@ footer {
   background-color: white;
   grid-area: footer; }
 
+.carousel {
+  grid-area: carousel; }
+
 .formulario {
   text-align: center;
   grid-area: formulario; }
-
-.carousel {
-  grid-area: carrusel; }
 
 .nav {
   grid-area: nav; }
@@ -329,7 +368,7 @@ footer {
   display: grid;
   grid-template-columns: 2fr  1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 0,5fr;
-  grid-template-areas: "header header header" "nav nav nav" "carrusel carrusel  carrusel" "main section aside" "main section2 aside" "footer footer footer"; }
+  grid-template-areas: "header header header" "nav nav nav" "carousel carousel carousel" "main section aside" "main section2 aside" "footer footer footer"; }
 
 @media (max-width: 768px) {
   .gridpadre {
@@ -338,15 +377,19 @@ footer {
     grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer"; }
   .notav {
     display: none; }
+  .notav2 {
+    display: none; }
   .carousel {
     display: none; } }
 
 @media (max-width: 500px) {
   .gridpadre {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0,5fr 1fr 0,5fr;
-    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+    grid-template-areas: "header" "nav" "main" "footer"; }
   .notav {
+    display: none; }
+  .notav2 {
     display: none; }
   .carousel {
     display: none; }

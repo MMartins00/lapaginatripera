@@ -3,6 +3,8 @@
 @import "nota1";
 @import "nota2";
 @import "nota3";
+
+
 html {
     font-size: 62, 5%;
 }
@@ -98,13 +100,13 @@ footer {
     background-color: map-get($estilos, color2 );
     grid-area: footer;
 }
+.carousel{
+    grid-area: carousel;
+}
 
 .formulario {
     text-align: center;
     grid-area: formulario;
-}
-.carousel{
-    grid-area: carrusel;
 }
 .nav{
     grid-area: nav;
@@ -134,7 +136,7 @@ footer {
     grid-template-areas:
         "header header header"
         "nav nav nav"
-        "carrusel carrusel  carrusel"
+        "carousel carousel carousel"
         "main section aside"
         "main section2 aside"
         "footer footer footer";
@@ -152,6 +154,9 @@ footer {
     }
     .notav{
         display: none;}
+    .notav2{
+        display: none;
+    }
     .carousel{
         display: none;
     }
@@ -160,15 +165,18 @@ footer {
 
  @media (max-width: 500px) {
     .gridpadre {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 0,5fr 1fr 0,5fr;
         grid-template-areas:
-            "header header"
-            "nav nav"
-            "main main"
-            "footer footer";
+            "header"
+            "nav"
+            "main"
+            "footer";
     }
     .notav{
+        display: none;
+    }
+    .notav2{
         display: none;
     }
     .carousel{
@@ -176,6 +184,4 @@ footer {
     }
     .aside{
         display: none;
-    }
-
-}
+    }}
