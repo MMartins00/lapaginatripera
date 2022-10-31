@@ -74,7 +74,7 @@ p{
             }
         
         .fotosv {
-                @include sizes(120px, 150px);
+                @include sizes(120px, 140px);
                 margin-left: 10px;
                 margin-top: 10px;
                 margin-bottom: 10px; 
@@ -131,26 +131,26 @@ footer {
 }
 .gridpadre {
     display: grid;
-    grid-template-columns:  2fr  1fr 1fr;
+    grid-template-columns:  2fr  1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 0,5fr;
     grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "carousel carousel carousel"
-        "main section aside"
-        "main section2 aside"
-        "footer footer footer";
+        "header header"
+        "nav nav"
+        "carousel carousel"
+        "main section "
+        "main section2 "
+        "footer footer ";
 }
 
 @media (max-width: 768px) {
     .gridpadre{
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr 0,5fr;
         grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main aside"
-        "footer footer footer";
+        "header header "
+        "nav nav "
+        "main main "
+        "footer footer ";
     }
     .notav{
         display: none;}
