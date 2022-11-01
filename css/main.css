@@ -37,7 +37,7 @@ footer, .footer {
   grid-template-columns: 1fr 0,5fr;
   grid-template-rows: 0,5fr 1fr 2fr 1fr;
   grid-template-areas: "header header" "nav nav" "main main" "footer footer";
-  background-color: white;
+  background-color: #3232c2;
   font-family: Arial, Helvetica, sans-serif; }
 
 main {
@@ -115,28 +115,6 @@ h2 {
     height: 200px; }
   .nav {
     max-width: 500px; } }
-
-@media (max-width: 768) {
-  .grid {
-    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
-  h2 {
-    width: 500px; }
-  p {
-    font-size: 75%;
-    width: 500px; } }
-
-@media (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "nav" "main" "footer"; }
-  p {
-    font-size: 70%;
-    width: 400px; }
-  h2 {
-    width: 400px; }
-  .fotosn {
-    width: 200px;
-    height: 200px; } }
 
 html {
   font-size: 62, 5%; }
