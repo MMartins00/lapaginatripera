@@ -81,11 +81,10 @@ h2{
     "footer footer";
 }
 h2{
-    width: 250px;
+    width: 500px;
 }
 p{
     font-size: 75%;
-    width: 350px;
 }
 .fotosn{
     @include sizes(200px, 200px)
@@ -103,7 +102,7 @@ p{
         width: 400px;
     }
     h2{
-        width: 250px;
+        width: 400px;
     }
     .fotosn{
        width: 200px;
