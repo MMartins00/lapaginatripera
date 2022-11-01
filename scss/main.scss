@@ -45,10 +45,12 @@ main {
 
 .notav {
     @extend .noticia;
-    padding: 10px;
+    width: 250px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    align-items: center; 
     grid-area: section;
 p{
         font-size: 80%;
@@ -56,19 +58,20 @@ p{
 
 .fotosv {
         @include sizes(120px, 150px);
-        margin-left: 10px;
-        margin-top: 10px;
         margin-bottom: 10px; 
         display: block;
+        align-items: center;
         background-repeat: no-repeat;}
     }
 
         .notav2 {
             @extend .noticia;
-            padding: 10px;
+            width: 250px;
+            padding-top: 10px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start; 
+            align-items: center;
             grid-area: section2;
             p{
                 font-size: 80%;
@@ -76,9 +79,7 @@ p{
         
         .fotosv {
                 @include sizes(120px, 140px);
-                margin-left: 10px;
                 margin-top: 10px;
-                margin-bottom: 10px; 
                 display: block;
                 background-repeat: no-repeat;}}
 

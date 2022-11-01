@@ -188,36 +188,37 @@ main {
       background-repeat: no-repeat; }
 
 .notav {
-  padding: 10px;
+  width: 250px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   grid-area: section; }
   .notav p {
     font-size: 80%; }
   .notav .fotosv {
     width: 120px;
     height: 150px;
-    margin-left: 10px;
-    margin-top: 10px;
     margin-bottom: 10px;
     display: block;
+    align-items: center;
     background-repeat: no-repeat; }
 
 .notav2 {
-  padding: 10px;
+  width: 250px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   grid-area: section2; }
   .notav2 p {
     font-size: 80%; }
   .notav2 .fotosv {
     width: 120px;
     height: 140px;
-    margin-left: 10px;
     margin-top: 10px;
-    margin-bottom: 10px;
     display: block;
     background-repeat: no-repeat; }
 
