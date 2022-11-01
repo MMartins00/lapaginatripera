@@ -82,7 +82,8 @@ p{
     width: 500px;
 }
 .fotosn{
-    @include sizes(200px, 200px)
+    width:200px;
+    height: 200px;
 }
 }
 @media (max-width: 500px){

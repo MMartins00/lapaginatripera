@@ -1,8 +1,7 @@
 @import "variables";
 @import "contacto";
 @import "nota1";
-@import "nota2";
-@import "nota3";
+@import "nota3"; 
 
 
 html {
@@ -152,18 +151,21 @@ footer {
     .carousel{
         display: none;
     }
+    p{
+        font-size: 75%;
+    }
      } 
     
 
  @media (max-width: 500px) {
     .gridpadre {
         grid-template-columns: 1fr;
-        grid-template-rows: 0,5fr 1fr 0,5fr;
+        grid-template-rows: 0,5fr 1fr 1fr 0,5fr ;
         grid-template-areas:
             "header"
             "nav"
             "main"
-            "footer";
+            "footer"
     }
     .notav{
         display: none;
@@ -174,5 +176,11 @@ footer {
     .carousel{
         display: none;
     }
-
+    p{
+        font-size: 70% ;
+    }
+    .fotos{
+        width: 100px;
+        height: 100px;
+    }
     }
