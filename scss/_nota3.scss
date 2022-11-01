@@ -1,96 +1,46 @@
 .grid{
-    display: grid;
-    grid-template-columns: 1fr 0,5fr;
-    grid-template-rows: 0,5fr 1fr 2fr 1fr;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
-    background-color: map-get($estilos, color2);
+    @extend .grid
 }
-.aside{
-    grid-area: aside;
-}
-
 .parrafo{
-    background-color: map-get($estilos, color2 );
-    font-family: Arial, Helvetica, sans-serif;
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    margin: 15px 15px 15px 15px;
+    @extend .parrafo
 }
 header{
-    grid-area: header;
-    color: map-get($estilos, color1 );
-    
-
+    @extend header
+}
+main{ @extend main
 }
 .nav{
-    grid-area: nav;
-.fondo{
-    background-color: map-get($estilos, color4 );
-
-    .color{
-        color: map-get($estilos, color2 );
-        padding-left: 25px; 
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
+   @extend .nav
 }
 p{
-    padding-left: 10px; 
-    padding-right: 10px;
+    @extend p
 }
 h2{
-    background-color: map-get($estilos , color2 );
-    
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 10px;
-    grid-area: titulo;
-    font-family: Arial, Helvetica, sans-serif
+    @extend h2
 }
 .logos{
-    @include sizes(20px, 22px);
-    background-repeat: no-repeat;
+   @extend .logos
 }
 .fotosn{
-    @include sizes(350px, 250px);
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    margin-bottom: 25px;
-   margin-left: 20px;
-   display: inline-block;
-}
+    @extend .fotosn}
 .footer{
-    grid-area: footer;
-    background-color: map-get($estilos , color1 );
-    text-align: center;
+    @extend .footer
 }
 @media (max-width: 768){
-.grid{
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
-}
-h2{
-    width: 250px;
-}
-p{
-    font-size: 75%;
-    width: 350px;
-}
-.fotosn{
-    @include sizes(200px, 200px)
-}
-}
+    .grid{
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    }
+    h2{
+        width: 500px;
+    }
+    p{
+        font-size: 75%;
+        width: 500px;
+    }}
 @media (max-width: 500px){
     .grid{
         grid-template-columns: 1fr;
@@ -100,10 +50,10 @@ p{
         "footer"}
     p{
         font-size: 70%;
-        width: 300px;
+        width: 400px;
     }
     h2{
-        width: 250px;
+        width: 400px;
     }
     .fotosn{
        width: 200px;

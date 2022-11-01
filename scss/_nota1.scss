@@ -8,13 +8,13 @@
     "main main"
     "footer footer";
     background-color: map-get($estilos, color2);
+    font-family: Arial, Helvetica, sans-serif ;
 }
 main{
     grid-area: main;
 }
 .parrafo{
     background-color: map-get($estilos, color2 );
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 15px 15px 15px 15px;
@@ -45,13 +45,11 @@ p{
 }
 h2{
     background-color: map-get($estilos , color2 );
-    
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px 10px;
     grid-area: titulo;
-    font-family: Arial, Helvetica, sans-serif
 }
 .logos{
     @include sizes(20px, 22px);
@@ -66,10 +64,8 @@ h2{
    display: inline-block;
 }
 .footer{
-    grid-area: footer;
-    background-color: map-get($estilos , color1 );
-    text-align: center;
-}
+@extend footer}
+
 @media (max-width: 768){
 .grid{
     grid-template-areas: 
@@ -79,11 +75,11 @@ h2{
     "footer footer";
 }
 h2{
-    width: 250px;
+    width: 300px;
 }
 p{
     font-size: 75%;
-    width: 350px;
+    width: 500px;
 }
 .fotosn{
     @include sizes(200px, 200px)
@@ -98,7 +94,7 @@ p{
         "footer"}
     p{
         font-size: 70%;
-        width: 300px;
+        width: 400px;
     }
     h2{
         width: 300px;
